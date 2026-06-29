@@ -178,7 +178,7 @@ class PlayerComponent extends PositionComponent
     // a held direction key moves the hero, and the hero never leaves the band.
     // This safe-default stub holds position so the app still launches (the hero
     // just cannot move up/down yet). See CHALLENGES.md -> c1-stepy.
-    return currentY;
+    return (currentY + dir * speed * dt).clamp(minY, maxY);
   }
 
   /// Reference hazard/fragment heights (top, middle, bottom) spread across the
