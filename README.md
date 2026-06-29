@@ -13,3 +13,4 @@ challenge, and each green lights up your node in the shared world.
 
 The game runs from the first second (a stubbed feature is just visibly inert);
 you implement the stubbed functions to bring it fully alive.
+
